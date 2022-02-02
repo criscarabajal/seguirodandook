@@ -129,11 +129,12 @@ body {
     }
     
     #btn-portada {
-        width: 20%;
+        width: 30%;
+        text-align: center;
         text-decoration: none;
         background-color: #42434e;
         color: #ffffff;
-        padding: 15px 25px 15px 35px;
+        padding: 15px 0 15px 0;
         border-radius: 5px;
         font-weight: 500;
         
@@ -454,7 +455,7 @@ body {
     }
     
     .producto-2 img {
-        width: 50%;
+        width: 83%;
         padding: 50px 25px 80px 75px;
         position: relative;
         bottom: 15px;
@@ -497,7 +498,7 @@ body {
     }
     
     .producto-3 img {
-        width: 50%;
+        width: 83%;
         padding: 50px 25px 70px 75px;
         position: relative;
         bottom: 15px;
@@ -578,6 +579,11 @@ body {
         margin: 0 0 20px 0;
         border-radius: 5px;
         font-weight: 500;
+    }
+    .btn-armar-pedido:hover {
+        background-color: #0f1110;
+        color: #ccd0dd;
+        transition: 0.5s;
     }
     /* BANNER PRODUCTION */
     .banner-production {
@@ -1119,8 +1125,7 @@ body {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
-        position: relative;
-        bottom: 2em;
+        
     }
     
     .iluminacion {
@@ -1136,6 +1141,7 @@ body {
     .cat-3columnas div img {
         width: 100%;
     }
+    /*
     .cat-3columnas div h2 {
         
         font-size: 1em;
@@ -1147,6 +1153,91 @@ body {
         position: relative;
         top: 5em;
     }
+    */
+    .iluminacion {
+        background-image: linear-gradient(to bottom, #394042, #0f1110);
+        padding-bottom: 10em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .iluminacion h2 {
+        font-size: 1em;
+        text-transform: uppercase;
+        font-weight: 300;
+        letter-spacing: 15px;
+        color: #cdd1de;
+        text-align: center;
+        position: relative;
+        top: 5em;
+    }
+    .iluminacion a img {
+        width: 80%;
+        margin-top: 10em;
+        margin-left: 3em;
+        
+    }
+    
+    .camaras h2 {
+        font-size: 1em;
+        text-transform: uppercase;
+        font-weight: 300;
+        letter-spacing: 15px;
+        color: #cdd1de;
+        text-align: center;
+        position: relative;
+        bottom: 9.45em; 
+        left: 1em;
+    }
+
+    .camaras {
+        background-image: linear-gradient(to bottom, #394042, #0f1110);
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .camaras a img {
+        width: 80%;
+        position: relative;
+        left: 3em;
+        
+        
+    }
+    
+    .objetivos h2 {
+        font-size: 1em;
+        text-transform: uppercase;
+        font-weight: 300;
+        letter-spacing: 15px;
+        color: #cdd1de;
+        text-align: center;
+        position: relative;
+        bottom: 0.75em;
+    }
+    .objetivos {
+        background-image: linear-gradient(to bottom, #394042, #0f1110);
+        padding-bottom: 10em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+   
+    .objetivos a img {
+        width: 50%;
+        position: relative;
+        left: 5em;
+        top: 4em;
+        
+    }
+    
+
+
+
 
     /* ----- LINEAS VERTICALES ----- */
     
@@ -1180,7 +1271,7 @@ body {
     .img-deco-luz-magenta {
         width: 30%;
         position: absolute;
-        top: 80em;
+        top: 90em;
     
     }
     #nosotros {
@@ -1347,7 +1438,7 @@ body {
     }
     
     .producto-2 img {
-        width: 50%;
+        width: 83%;
         padding: 50px 25px 80px 75px;
         position: relative;
         bottom: 15px;
@@ -1383,7 +1474,7 @@ body {
     }
     
     .producto-3 img {
-        width: 50%;
+        width: 83%;
         padding: 50px 25px 70px 75px;
         position: relative;
         bottom: 15px;
@@ -1402,11 +1493,12 @@ body {
         font-weight: 500;
     }
     .btn-vermas {
-        width: 5em;
+        width: 8em;
         text-decoration: none;
         background-color: #42434e;
         color: #cdd1de;
-        padding: 1em 2em 1em 2em;
+        text-align: center;
+        padding:0.8em 0 0.8em 0;
         border-radius: 5px;
         font-weight: 300;
         margin: 4em;
