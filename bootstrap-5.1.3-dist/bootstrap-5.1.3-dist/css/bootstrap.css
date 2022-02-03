@@ -3921,7 +3921,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #0d6efd;
+  color: #cdd1de;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -4056,8 +4056,8 @@ textarea.form-control-lg {
 }
 
 .navbar-collapse {
-  flex-basis: 100%;
-  flex-grow: 1;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -4117,7 +4117,7 @@ textarea.form-control-lg {
   .navbar-expand-sm .navbar-nav-scroll {
     overflow: visible;
   }
-  .navbar-expand-sm .navbar-collapse {
+  .navbar-expand-sm  {
     display: flex !important;
     flex-basis: auto;
   }
@@ -4170,7 +4170,7 @@ textarea.form-control-lg {
   .navbar-expand-md .navbar-nav-scroll {
     overflow: visible;
   }
-  .navbar-expand-md .navbar-collapse {
+  .navbar-expand-md  {
     display: flex !important;
     flex-basis: auto;
   }
@@ -4207,8 +4207,9 @@ textarea.form-control-lg {
 }
 @media (min-width: 992px) {
   .navbar-expand-lg {
+    display: flex;
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: center;
   }
   .navbar-expand-lg .navbar-nav {
     flex-direction: row;
@@ -4223,14 +4224,15 @@ textarea.form-control-lg {
   .navbar-expand-lg .navbar-nav-scroll {
     overflow: visible;
   }
-  .navbar-expand-lg .navbar-collapse {
+   .navbar-collapse {
     display: flex !important;
-    flex-basis: auto;
+    justify-content: center !important;
+    align-items: center !important;
   }
-  .navbar-expand-lg .navbar-toggler {
+  .navbar-toggler {
     display: none;
   }
-  .navbar-expand-lg .offcanvas-header {
+   .offcanvas-header {
     display: none;
   }
   .navbar-expand-lg .offcanvas {
@@ -4276,7 +4278,7 @@ textarea.form-control-lg {
   .navbar-expand-xl .navbar-nav-scroll {
     overflow: visible;
   }
-  .navbar-expand-xl .navbar-collapse {
+  .navbar-expand-xl {
     display: flex !important;
     flex-basis: auto;
   }
@@ -4329,7 +4331,7 @@ textarea.form-control-lg {
   .navbar-expand-xxl .navbar-nav-scroll {
     overflow: visible;
   }
-  .navbar-expand-xxl .navbar-collapse {
+  .navbar-expand-xxl {
     display: flex !important;
     flex-basis: auto;
   }
@@ -4452,10 +4454,11 @@ textarea.form-control-lg {
 }
 
 .navbar-dark .navbar-brand {
-  color: #fff;
+  color: #cdd1de;
+  
 }
 .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
-  color: #fff;
+  color: #cdd1de;
 }
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.55);

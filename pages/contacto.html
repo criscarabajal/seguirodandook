@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/css/bootstrap.css">
         <link rel="stylesheet" href="../estilos/style.css">
         <link rel="icon" href="../assests/fav-icon.png" type="image/x-icon">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -13,41 +14,57 @@
     <body>
         
         <header>
-            <a href="/index.html"><img class="logo-header" src="../assests/logo-gris.png" alt="marca"></a>
-    
-    
-    
-           <!--Menú-->
-            <nav>
-                <ul>
-                    <li>
-                        <a class="btn-nav" href="../index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a class="btn-nav" href="../pages/nosotros.html">Nosotros</a>
-                    </li>
-                    <li>
-                        <a class="btn-nav" href="../pages/alquiler.html">Alquiler</a>
-                    </li>
-                    <li>
-                        <a class="btn-nav" href="../pages/productos.html">Productos</a>
-                    </li>
-                    <li>
-                        <a class="btn-nav" href="../pages/contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
-    
-    
-            <!--iconos de redes-->
-            <ul class="iconos-rrss-header">
-                <li>
-                    <a href="#" target="_blank"><img src="../assests/icono-ig.png" alt="instagram"></a>
-                </li>
-                <li>
-                    <a href="#" target="_blank"><img src="../assests/icono-ws.png" alt="whatsapp"></a>
-                </li>
-            </ul>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                      <img src="/assests/logo-gris.png" alt="" width="200px" >
+                    </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="/index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/alquiler.html">Alquiler</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="/pages/productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Iluminacion</a></li>
+                                <li><a class="dropdown-item" href="#">Camaras</a></li>
+                                <li><a class="dropdown-item" href="#">Objetivos</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                        
+                        <ul class="iconos-rrss-header">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" target="_blank"><img src="/assests/icono-ig.png" alt="instagram"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" target="_blank"><img src="/assests/icono-ws.png" alt="whatsapp"></a>
+                            </li>
+                        </ul>
+        
+                    </div>
+                    
+                        
+                    
+        
+        
+                </div>
+              </nav>
         
         </header>
 
@@ -61,19 +78,24 @@
                 <fieldset>
                     <legend>Escribinos!</legend>
 
-                        <label for="nombre_apellido">Nombre y apellido</label><br>
-                            <input name="nombre_apellido" type="text"><br>
-
-                        <label for="email">Email</label><br>
-                            <input name="email" type="text"><br>
-
-                        <label for="telefono">Teléfono</label><br>
-                            <input name="telefono" type="text"><br>
-
-                        <label for="mensaje">Dejanos tu mensaje</label><br>
-                            <input id="mensaje" name="mensaje" type="text"><br>
-
-                        <input id="button" type="button" value="Enviar">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Nombre y apellido</label>
+                        <input type="email" class="form-control" id="exampleInputName1" aria-describedby="emailHelp">
+                        
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Email</label>
+                        <input type="password" class="form-control" id="exampleInputEmail1">
+                      </div>
+                      <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">telefono</label>
+                          <input type="password" class="form-control" id="exampleInputTel1">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Dejanos tu mensaje</label>
+                          <input type="password" class="form-control" id="exampleInputMensaje1">
+                        </div>
+                      <input id="button" type="button" value="Enviar">
                         
                 </fieldset>
     
@@ -84,7 +106,9 @@
             <img class="imagen-contacto wow animate__animated animate__fadeInUp" src="../assests/imagen-contacto.png" alt="imagen-decorativa">
 
         </section>
-
+        <form>
+            
+          </form>
 
             <section class="contacto-redes wow animate__animated animate__fadeInUp">
                 <!--ICONOS REDES-->

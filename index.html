@@ -52,39 +52,57 @@
     -->
     <header>
         
-        <img class="logo-header" src="./assests/logo-gris.png" alt="marca">
-       
-       <!--Menú-->
-        <nav>
-            <ul>
-                <li>
-                    <a class="btn-nav" href="./index.html">Inicio</a>
-                </li>
-                <li>
-                    <a class="btn-nav" href="./pages/nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a class="btn-nav" href="./pages/alquiler.html">Alquiler</a>
-                </li>
-                <li>
-                    <a class="btn-nav" href="./pages/productos.html">Productos</a>
-                </li>
-                <li>
-                    <a class="btn-nav" href="./pages/contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-        
-
-        <!--iconos de redes-->
-        <ul class="iconos-rrss-header">
-            <li>
-                <a href="#" target="_blank"><img src="./assests/icono-ig.png" alt="instagram"></a>
-            </li>
-            <li>
-                <a href="#" target="_blank"><img src="./assests/icono-ws.png" alt="whatsapp"></a>
-            </li>
-        </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                  <img src="/assests/logo-gris.png" alt="" width="200px" >
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/alquiler.html">Alquiler</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/pages/productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Iluminacion</a></li>
+                            <li><a class="dropdown-item" href="#">Camaras</a></li>
+                            <li><a class="dropdown-item" href="#">Objetivos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    
+                    <ul class="iconos-rrss-header">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" target="_blank"><img src="/assests/icono-ig.png" alt="instagram"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" target="_blank"><img src="/assests/icono-ws.png" alt="whatsapp"></a>
+                        </li>
+                    </ul>
+    
+                </div>
+                
+                    
+                
+    
+    
+            </div>
+          </nav>
     
     </header>
 
@@ -104,22 +122,24 @@
         </div>    
         <!--sección de categorias-->
         <section class="cat-3columnas wow animate__animated animate__fadeInUp">
-            
-            <div class="iluminacion">
+        <div class="row">    
+            <div class="iluminacion col-xl-4 col-md-4 col-sm-12 col-12">
                 
                 <h2>Iluminación</h2>
                 <a href="#"><img src="./assests/cat-iluminacion.png" alt="iluminacion"></a>
             </div>
-
-            <div class="camaras">
-                <h2 id="titulo-camaras">Cámaras</h2>
-                <a href="#"><img src="./assests/cat-camara.png" alt="camaras"></a>
+            <div class="camaras col-xl-4 col-md-4 col-sm-12">
+                
+                <h2>camaras</h2>
+                <a href="#"><img src="./assests/cat-camara.png" alt="iluminacion"></a>
             </div>
-
-            <div class="objetivos">
-                <h2>Objetivos</h2>
-                <a href="#"><img src="./assests/lente.png" alt="objetivos"></a>
+            <div class="objetivos col-xl-4 col-md-4 col-sm-12">
+                
+                <h2>objetivos</h2>
+                <a href="#"><img src="./assests/lente.png" alt="iluminacion"></a>
             </div>
+            
+        </div>    
         </section>
         
         <!--LINEA VERTICAL-->
